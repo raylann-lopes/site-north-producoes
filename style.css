@@ -159,35 +159,35 @@ section .container .box {
   gap: 1rem;
 }
 
-section .container .box ul {
+ .about .container .box ul {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  padding: 1rem 0rem;
+  padding: 2rem 0rem;
 }
 
-section .container .box ul li {
-    font-size: 21px;
-    color: #111;
+.about .container .box ul li {
+  font-size: 21px;
+  color: #111;
 }
 
-section .container .box ul li i{
-    font-size: 25px;
-    color: #000;
-    background-color: rgb(216, 44, 250) ;
-    padding: 3px;
-    border-radius: 50%;
+.about .container .box ul li i {
+  font-size: 16px;
+  color: #ffffff;
+  background-color: rgb(0, 0, 0);
+  padding: 5px;
+  border-radius: 50%;
 }
 
-section .container .box ul li span{
-    font-size: 20px;
-    font-weight: 500;
-    color: #000;
-    text-transform: capitalize;
-    padding: 2px 5px;
+.about .container .box ul li span {
+  font-size: 16px;
+  font-weight: 500;
+  color: #444;
+  text-transform: capitalize;
+  padding: 2px 5px;
 }
 
-section .container .box .signature {
+.about .container .box .signature {
   width: 80%;
   display: flex;
   text-align: center;
@@ -196,21 +196,64 @@ section .container .box .signature {
   border-top: 1px solid black;
 }
 
-section .container .box img {
+.about .container .box img {
   width: 80px;
   height: fit-content;
 }
 
-section .container .box .txt {
+.about .container .box .txt {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  justify-content: center;
   padding-left: 1rem;
-  border-left: 1px solid black;
 }
 
-section .container .about-image {
+.about .container .about-image {
   width: 50%;
   min-width: 300px;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.about .about-image .image {
+  width: 50%;
+  height: 80%;
+  overflow: hidden;
+}
+
+.about .about-image .image::after {
+  content:'';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: -30px;
+  margin-left: -30px;
+  width: 50%;
+  height: 80%;
+  background-color: red;
+  z-index: -1;
+}
+
+.about .about-image .image::after {
+  content:'';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: -30px;
+  margin-left: -30px;
+  width: 50%;
+  height: 80%;
+  background-color: rgb(4, 0, 255);
+  z-index: -1;
+}
+
+.about .about-image .image img{
+  width: 100%;
+  min-width: 300px;
+  overflow: cover;
 }
