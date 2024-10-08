@@ -53,7 +53,7 @@ h4 {
 }
 
 .navbar .logo a {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, 'Geneva', Verdana, sans-serif;
   font-size: 25px;
   font-weight: 400;
   color: #fff;
@@ -234,21 +234,21 @@ section .container .box {
   margin-left: -30px;
   width: 50%;
   height: 80%;
-  background-color: rgb(226, 1, 132);  
+  background-color: #9962aa;  
   z-index: -1;
 }
 
-.about .about-image .image::after {
+.about .about-image .image::before {
   content:'';
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  margin-top: -30px;
-  margin-left: -30px;
+  margin-top:  30px;
+  margin-left: 30px;
   width: 50%;
   height: 80%;
-  background-color: rgba(136, 123, 138, 0.63);  
+  background-image: url(/img/dots.png);
   z-index: -1;
 }
 
