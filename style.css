@@ -234,7 +234,7 @@ section .container .box {
   margin-left: -30px;
   width: 50%;
   height: 80%;
-  background-color: red;
+  background-color: rgb(226, 1, 132);  
   z-index: -1;
 }
 
@@ -248,7 +248,7 @@ section .container .box {
   margin-left: -30px;
   width: 50%;
   height: 80%;
-  background-color: rgb(4, 0, 255);
+  background-color: rgba(136, 123, 138, 0.63);  
   z-index: -1;
 }
 
