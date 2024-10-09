@@ -4,7 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>North Produções</title>
+
+    <!-- Swiper CSS-->
+    <link rel="stylesheet" href="/css/swiper-bundle.min.css" />
+    <!--CSS-->
     <link rel="stylesheet" href="style.css" />
+    <!-- Font-->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -43,8 +48,8 @@
       </div>
     </div>
 
-
-    <section id="about" class="about">
+    <!-- 
+     <section id="about" class="about">
       <div class="container">
         <div class="box">
           <h1 class="title">
@@ -85,10 +90,44 @@
         </div>
       </div>
     </section>
-  
-  
-  
-  
-  
+    -->
+    <section class="cards">
+      <div class="slide-container swiper">
+        <div class="slide-content">
+          <div class="card-wrapper swiper-wrapper">
+            <div class="card swiper-slide">
+              <div class="image-content">
+                <span class="overlay"> </span>
+
+                <div class="card-image">
+                  <img src="img/ana.jpg" alt="" class="card-img" />
+                </div>
+              </div>
+
+              <div class="card-content">
+                <h2 class="name">Ana Clara</h2>
+                <p class="description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Minima distinctio ut nemo dicta? Voluptatum eius quis commodi
+                  at repellendus dolores suscipit ullam fuga, officia, tenetur
+                  rerum ea molestiae animi. Temporibus?
+                </p>
+
+                <button class="button">Ver Mais</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
   </body>
+
+  <!-- SWIPER JS -->
+  <script src="js/swiper-bundle.min.js"></script>
+
+  <!-- JAVA SCRIPT -->
+  <script src="js/script.js"></script>
 </html>
